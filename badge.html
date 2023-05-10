@@ -22,6 +22,9 @@
             <a class="nav-link" href="home.html">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
             </li>
         </ul>
@@ -29,7 +32,118 @@
     </nav>
     <div class="container">
         <h1>Badge</h1>
-        <p></p>
+        <p>Documentazione ed esempi per le badge, il componente di conteggio ed etichettatura.</p>
+        <h2>Esempi</h2>
+        <p>Le badge si scalano per adattarsi alle dimensioni dell’elemento genitore immediato utilizzando la ridimensionamento relativo del font e le unità <b>em</b>.</p>
+        <div class="container">
+          <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+          <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+          <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+          <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+          <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+          <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+<p><pre>
+&lt;h1>Example heading &lt;span class="badge badge-secondary">New&lt;/span>&lt;/h1>
+&lt;h2>Example heading &lt;span class="badge badge-secondary">New&lt;/span>&lt;/h2>
+&lt;h3>Example heading &lt;span class="badge badge-secondary">New&lt;/span>&lt;/h3>
+&lt;h4>Example heading &lt;span class="badge badge-secondary">New&lt;/span>&lt;/h4>
+&lt;h5>Example heading &lt;span class="badge badge-secondary">New&lt;/span>&lt;/h5>
+&lt;h6>Example heading &lt;span class="badge badge-secondary">New&lt;/span>&lt;/h6>
+</pre></p>
+        </div>
+        <p>I badge possono essere utilizzati come parte di link o pulsanti per fornire un contatore.</p>
+        <div class="container">
+          <button type="button" class="btn btn-primary">
+            Notifications <span class="badge badge-light">4</span>
+          </button>
+<p><pre>
+&lt;button type="button" class="btn btn-primary">
+  Notifications &lt;span class="badge badge-light">4&lt;/span>
+&lt;/button>
+</pre></p>   
+        </div>
+        <p>Si può notare che a seconda di come vengono utilizzati, i badge possono essere fonte di confusione per gli utenti di lettori di schermo e tecnologie assistive simili. Mentre lo stile dei badge fornisce un’indicazione visiva del loro scopo, questi utenti saranno semplicemente presentati con il contenuto del badge. A seconda della situazione specifica, questi badge possono sembrare parole o numeri aggiuntivi casuali alla fine di una frase, link o pulsante.</p>
+        <p>A meno che il contesto non sia chiaro (come nell’esempio delle “Notifiche”, dove si capisce che il “4” è il numero di notifiche), considerare l’inclusione di un contesto aggiuntivo tramite un pezzo di testo aggiuntivo nascosto visivamente.</p>
+        <div class="container">
+          <button type="button" class="btn btn-primary">
+            Profile <span class="badge badge-light">9</span>
+            <span class="sr-only">unread messages</span>
+          </button>
+<p><pre>
+&lt;button type="button" class="btn btn-primary">
+  Profile &lt;span class="badge badge-light">9&lt;/span>
+  &lt;span class="sr-only">unread messages&lt;/span>
+&lt;/button>
+</pre></p>
+        </div>
+        <h3>Contextual variations</h3>
+        <p>Aggiungere una delle modifiere di classi elencate di seguito per cambiare l’aspetto di un badge.</p>
+        <div class="container">
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-secondary">Secondary</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-info">Info</span>
+          <span class="badge badge-light">Light</span>
+          <span class="badge badge-dark">Dark</span>
+<p><pre>   
+&lt;span class="badge badge-primary">Primary&lt;/span>
+&lt;span class="badge badge-secondary">Secondary&lt;/span>
+&lt;span class="badge badge-success">Success&lt;/span>
+&lt;span class="badge badge-danger">Danger&lt;/span>
+&lt;span class="badge badge-warning">Warning&lt;/span>
+&lt;span class="badge badge-info">Info&lt;/span>
+&lt;span class="badge badge-light">Light&lt;/span>
+&lt;span class="badge badge-dark">Dark&lt;/span>
+</pre></p>   
+        </div>
+        <h4>Comunicare il significato alle tecnologie assistive.</h4>
+        <p>Utilizzare il colore per aggiungere significato fornisce solo un’indicazione visiva, che non verrà trasmessa agli utenti delle <a href="https://it.wikipedia.org/wiki/Tecnologie_assistive">tecnologie assistive</a>, come i lettori di schermo. Dobbiamo assicurarci che le informazioni indicate dal colore siano ovvie dal contenuto stesso (ad esempio il testo visibile) oppure siano incluse attraverso mezzi alternativi, come testo aggiuntivo nascosto con la classe <b>.sr-only</b>.</p>
+        <h3>Pill badges</h3>
+        <p>Utilizzare la modifier di classe <b>.badge-pill</b> per rendere i badge più arrotondati (con un <b>border-radius</b> maggiore e un <b>padding</b> orizzontale aggiuntivo).</p>
+        <div class="container">
+          <span class="badge badge-pill badge-primary">Primary</span>
+          <span class="badge badge-pill badge-secondary">Secondary</span>
+          <span class="badge badge-pill badge-success">Success</span>
+          <span class="badge badge-pill badge-danger">Danger</span>
+          <span class="badge badge-pill badge-warning">Warning</span>
+          <span class="badge badge-pill badge-info">Info</span>
+          <span class="badge badge-pill badge-light">Light</span>
+          <span class="badge badge-pill badge-dark">Dark</span>
+<p><pre>
+&lt;span class="badge badge-pill badge-primary">Primary&lt;/span>
+&lt;span class="badge badge-pill badge-secondary">Secondary&lt;/span>
+&lt;span class="badge badge-pill badge-success">Success&lt;/span>
+&lt;span class="badge badge-pill badge-danger">Danger&lt;/span>
+&lt;span class="badge badge-pill badge-warning">Warning&lt;/span>
+&lt;span class="badge badge-pill badge-info">Info&lt;/span>
+&lt;span class="badge badge-pill badge-light">Light&lt;/span>
+&lt;span class="badge badge-pill badge-dark">Dark&lt;/span>
+</pre></p>
+        </div>
+        <h3>Links</h3>
+        <p>Utilizzando le classi contestuali <b>.badge-*</b> su un elemento &lt;a> si possono fornire rapidamente badge azionabili con stati di hover e focus.</p>
+        <div class="container">
+          <a href="#" class="badge badge-primary">Primary</a>
+          <a href="#" class="badge badge-secondary">Secondary</a>
+          <a href="#" class="badge badge-success">Success</a>
+          <a href="#" class="badge badge-danger">Danger</a>
+          <a href="#" class="badge badge-warning">Warning</a>
+          <a href="#" class="badge badge-info">Info</a>
+          <a href="#" class="badge badge-light">Light</a>
+          <a href="#" class="badge badge-dark">Dark</a>
+<p><pre>
+&lt;a href="#" class="badge badge-primary">Primary&lt;/a>
+&lt;a href="#" class="badge badge-secondary">Secondary&lt;/a>
+&lt;a href="#" class="badge badge-success">Success&lt;/a>
+&lt;a href="#" class="badge badge-danger">Danger&lt;/a>
+&lt;a href="#" class="badge badge-warning">Warning&lt;/a>
+&lt;a href="#" class="badge badge-info">Info&lt;/a>
+&lt;a href="#" class="badge badge-light">Light&lt;/a>
+&lt;a href="#" class="badge badge-dark">Dark&lt;/a>
+</pre></p>
+        </div>
         <footer id="contact" style="background-color: #fff; border: 1px solid #000; padding: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center;">
             <a href="https://www.facebook.com/profile.php?id=100092372720540" class="fa fa-facebook"></a>
@@ -37,14 +151,7 @@
             <a href="https://www.instagram.com/beppescape/" class="fa fa-instagram"></a>
             </div>
             <hr>
-            <div style="display: flex; align-items: center;">
-                <div>
-                  <p><i class="fa fa-envelope"> </i> <a href="#">singh.manmohit.06@itisdalmine.edu.it</a></p>
-                  <p><i class="fa fa-envelope"> </i> <a href="#">rota.lorenzo.06@itisdalmine.edu.it</a></p>
-                  <p><i class="fa fa-envelope"> </i> <a href="#">milan.matteorenato.06@itisdalmine.edu.it</a></p>
-                  <p><i class="fa fa-envelope"> </i> <a href="#">daennoune.elias.06@itisdalmine.edu.it</a></p>
-                </div>
-              </div>
+            <center><p><i class="fa fa-envelope"> </i> <a href="#">beppescape@gmail.com</a></p> </center>
             <p style="text-align: center; margin-top: 10px;">© 2023 Bootstrap Website. All rights reserved.</p>
         </footer>
     </div>

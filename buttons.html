@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/esm/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tippy.js@6.3.1/dist/tippy-bundle.umd.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Bootstrap Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Buttons</h1>
+        <p>Puoi utilizzare gli stili dei pulsanti personalizzati di Bootstrap per le azioni nei moduli, nelle finestre di dialogo e altro ancora, con il supporto per molteplici dimensioni, stati e molto altro.</p>
+        <h2>Esempi</h2>
+        <p>Bootstrap include diversi stili di pulsanti predefiniti, ognuno con lo scopo semantico specifico, con alcune opzioni extra aggiunte per avere più controllo.</p>
+        <div class="container">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+<p><pre>
+&lt;button type="button" class="btn btn-primary">Primary&lt;/button>
+&lt;button type="button" class="btn btn-secondary">Secondary&lt;/button>
+&lt;button type="button" class="btn btn-success">Success&lt;/button>
+&lt;button type="button" class="btn btn-danger">Danger&lt;/button>
+&lt;button type="button" class="btn btn-warning">Warning&lt;/button>
+&lt;button type="button" class="btn btn-info">Info&lt;/button>
+&lt;button type="button" class="btn btn-light">Light&lt;/button>
+&lt;button type="button" class="btn btn-dark">Dark&lt;/button>
+&lt;button type="button" class="btn btn-link">Link&lt;/button>
+</pre></p>
+        </div>
+        <h4>Comunicare il significato alle tecnologie assistive.</h4>
+        <p>Utilizzare il colore per aggiungere significato fornisce solo un’indicazione visiva, che non verrà trasmessa agli utenti delle <a href="https://it.wikipedia.org/wiki/Tecnologie_assistive">tecnologie assistive</a>, come i lettori di schermo. Dobbiamo assicurarci che le informazioni indicate dal colore siano ovvie dal contenuto stesso (ad esempio il testo visibile) oppure siano incluse attraverso mezzi alternativi, come testo aggiuntivo nascosto con la classe <b>.sr-only</b>.</p>
+        <h3>Button tags</h3>
+        <p>Le classi <b>.btn</b> sono progettate per essere utilizzate con l’elemento <b>&lt;button></b>. Tuttavia, è possibile utilizzare queste classi anche sugli elementi <b>&lt;a></b> o <b>&lt;input></b> (anche se alcuni browser potrebbero applicare una resa leggermente diversa).</p>
+        <p>Quando si utilizzano classi di pulsanti su elementi <b>&lt;a></b> utilizzati per attivare funzionalità in pagina (come il collasso del contenuto), invece che creare collegamenti verso nuove pagine o sezioni all’interno della pagina corrente, questi collegamenti dovrebbero essere forniti di un <b>role=“button”</b> per trasmettere in modo appropriato il loro scopo alle tecnologie assistive, come gli screen reader.</p>
+        <div class="container">
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button class="btn btn-primary" type="submit">Button</button>
+            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="reset" value="Reset">
+<p><pre>
+&lt;a class="btn btn-primary" href="#" role="button">Link&lt;/a>
+&lt;button class="btn btn-primary" type="submit">Button&lt;/button>
+&lt;input class="btn btn-primary" type="button" value="Input">
+&lt;input class="btn btn-primary" type="submit" value="Submit">
+&lt;input class="btn btn-primary" type="reset" value="Reset">
+</pre></p>
+        </div>
+        <h3>Outline buttons</h3>
+        <p>Se hai bisogno di un pulsante, ma non vuoi l’eccessivo background color che portano? Sostituisci le classi dei modificatori predefiniti con quelle <b>.btn-outline-*</b> per rimuovere tutte le immagini e i colori di sfondo su ogni pulsante.</p>
+        <div class="container">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+<p><pre>
+&lt;button type="button" class="btn btn-outline-primary">Primary&lt;/button>
+&lt;button type="button" class="btn btn-outline-secondary">Secondary&lt;/button>
+&lt;button type="button" class="btn btn-outline-success">Success&lt;/button>
+&lt;button type="button" class="btn btn-outline-danger">Danger&lt;/button>
+&lt;button type="button" class="btn btn-outline-warning">Warning&lt;/button>
+&lt;button type="button" class="btn btn-outline-info">Info&lt;/button>
+&lt;button type="button" class="btn btn-outline-light">Light&lt;/button>
+&lt;button type="button" class="btn btn-outline-dark">Dark&lt;/button>
+</pre></p>
+        </div>
+        <h3>Sizes</h3>
+        <p>Desideri pulsanti più grandi o più piccoli? Aggiungi <b>.btn-lg</b> o <b>.btn-sm</b> per ottenere ulteriori dimensioni.</p>
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+<p><pre>
+&lt;button type="button" class="btn btn-primary btn-lg">Large button&lt;/button>
+&lt;button type="button" class="btn btn-secondary btn-lg">Large button&lt;/button>
+</pre></p>
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+<p><pre>
+&lt;button type="button" class="btn btn-primary btn-sm">Small button&lt;/button>
+&lt;button type="button" class="btn btn-secondary btn-sm">Small button&lt;/button>
+</pre></p>
+        </div>
+        <p>Puoi creare pulsanti a larghezza intera, che si estendono su tutta la larghezza del contenitore padre, aggiungendo .btn-block.</p>
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+<p><pre>
+&lt;button type="button" class="btn btn-primary btn-lg btn-block">Block level button&lt;/button>
+&lt;button type="button" class="btn btn-secondary btn-lg btn-block">Block level button&lt;/button>
+</pre></p>
+        </div>
+        <h3>Active state</h3>
+        <p>I pulsanti sembreranno premuti (con uno sfondo più scuro, bordo più scuro e ombreggiatura interna) quando attivi. Non è necessario aggiungere una classe a <b>&lt;button></b> poiché usano una pseudo classe. Tuttavia, è possibile forzare lo stesso aspetto attivo con <b>.active</b> (e includere l’attributo <b>aria-pressed=“true”</b>) se si desidera replicare lo stato in modo programmatico.</p>
+        <div class="container">
+            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+            <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+<p><pre>
+&lt;a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link&lt;/a>
+&lt;a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link&lt;/a>
+</pre></p>
+        </div>
+        <h3>Disabled state</h3>
+        <p>Per rendere i pulsanti inattivi basta aggiungere l’attributo booleano <b>disabled</b> a qualsiasi elemento <b>&lt;button></b>.</p>
+        <div class="container">
+            <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+            <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+<p><pre>
+&lt;button type="button" class="btn btn-lg btn-primary" disabled>Primary button&lt;/button>
+&lt;button type="button" class="btn btn-secondary btn-lg" disabled>Button&lt;/button>
+</pre></p>
+        </div>
+        <p>I pulsanti disabilitati utilizzando l’elemento <b>&lt;a></b> si comportano in modo leggermente diverso:</p>
+        <ul>
+            <li>Gli elementi <b>&lt;a></b> non supportano l’attributo disabled, quindi è necessario aggiungere la classe <b>.disabled</b> per renderlo visivamente disabilitato.</li>
+            <li>Vengono inclusi alcuni stili future-friendly per disabilitare tutti i <b>pointer-events</b> sui pulsanti di ancoraggio. Nei browser che supportano questa proprietà, non verrà visualizzato il cursore disabilitato.</li>
+            <li>I pulsanti disabilitati dovrebbero includere l’attributo <b>aria-disabled=“true”</b> per indicare lo stato dell’elemento alle <a href="https://it.wikipedia.org/wiki/Tecnologie_assistive">tecnologie assistive</a>.</li>
+        </ul>
+            <div class="container">
+                <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
+                <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>
+<p><pre>
+&lt;a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link&lt;/a>
+&lt;a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link&lt;/a>
+</pre></p>
+        </div>
+        <h3>Toggle states</h3>
+        <p>Aggiungi <b>data-toggle=“button”</b> per attivare lo stato <b>active</b> di un pulsante. Se si preimposta un pulsante, è necessario aggiungere manualmente la classe <b>.active</b> e <b>aria-pressed=“true”</b> al <b>&lt;button></b>.</p>
+        <div class="container">
+            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Single toggle
+                </button>
+<p><pre>
+&lt;button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+    Single toggle
+&lt;/button>
+</pre></p>
+        </div>
+        <h3>Checkbox and radio buttons</h3>
+        <p>Gli stili <b>.button</b> di Bootstrap possono essere applicati ad altri elementi, come <b>&lt;label></b>, per fornire la selezione di pulsanti con stile checkbox o radio. Aggiungi <b>data-toggle=“buttons”</b> a un <b>.btn-group</b> che contiene quei pulsanti modificati per abilitare il comportamento di attivazione/disattivazione tramite JavaScript e aggiungi <b>.btn-group-toggle</b> per stilizzare gli <b>&lt;input></b> all’interno dei pulsanti. Si noti che è possibile creare singoli pulsanti con input o gruppi di essi.</p>
+        <p>Lo stato selezionato per questi pulsanti viene aggiornato solo attraverso l’evento di <b>click</b> sul pulsante. Se si utilizza un altro metodo per aggiornare l’input - ad esempio, con <b>&lt;input type ="reset"></b> o applicando manualmente le <b>checked</b> property dell’input - sarà necessario attivare/disattivare manualmente la classe <b>.active</b> sul <b>&lt;label></b>.</p>
+        <p>Si può notare che i pulsanti pre-selezionati richiedono l’aggiunta manuale della classe <b>.active</b> all’elemento <b>&lt;label></b> dell’input.</p>
+        <div class="container">
+            <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                    <input type="checkbox" checked autocomplete="off"> Checked
+                </label>
+                </div>
+<p><pre>
+&lt;div class="btn-group-toggle" data-toggle="buttons">
+    &lt;label class="btn btn-secondary active">
+        &lt;input type="checkbox" checked autocomplete="off"> Checked
+    &lt;/label>
+&lt;/div>
+</pre></p>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+            </label>
+            <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+            </label>
+            <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+            </label>
+        </div>
+<p><pre>
+&lt;div class="btn-group btn-group-toggle" data-toggle="buttons">
+    &lt;label class="btn btn-secondary active">
+        &lt;input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+    &lt;/label>
+    &lt;label class="btn btn-secondary">
+        &lt;input type="radio" name="options" id="option2" autocomplete="off"> Radio
+    &lt;/label>
+    &lt;label class="btn btn-secondary">
+        &lt;input type="radio" name="options" id="option3" autocomplete="off"> Radio
+    &lt;/label>
+&lt;/div>
+</pre></p>
+        </div>      
+        <footer id="contact" style="background-color: #fff; border: 1px solid #000; padding: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="https://www.facebook.com/profile.php?id=100092372720540" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/BeppeEscape" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/beppescape/" class="fa fa-instagram"></a>
+            </div>
+            <hr>
+            <center><p><i class="fa fa-envelope"> </i> <a href="#">beppescape@gmail.com</a></p> </center>
+            <p style="text-align: center; margin-top: 10px;">© 2023 Bootstrap Website. All rights reserved.</p>
+        </footer>
+    </div>
+    </div>
+</body>
+</html>
